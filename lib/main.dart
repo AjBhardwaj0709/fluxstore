@@ -5,18 +5,6 @@ import 'package:fluxstore/exports/app_exports.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  if (kIsWeb) {
-    await Firebase.initializeApp(
-      options: const FirebaseOptions(
-        apiKey: "AIzaSyDEHuboaneZqAEp0ubJZQScKy0uj6qHPf0",
-        authDomain: "fluxstore-f3d3a.firebaseapp.com",
-        projectId: "fluxstore-f3d3a",
-        storageBucket: "fluxstore-f3d3a.firebasestorage.app",
-        messagingSenderId: "681657905883",
-        appId: "1:681657905883:web:0542ae16b9cfa4426792fe",
-      ),
-    );
-  }
 await Firebase.initializeApp();
  
   runApp(MyApp());
